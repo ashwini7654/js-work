@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Concept Of DoubleQuote</title>
+    <script>
+        // let msg='let's learn Js '; this will give eror because we are trying to put single quote within in single quote if we want to put single quote then we shold require double quote 
+        let msg="let's learn JS";
+        msg='let"s learn JS';
+        document.write(msg);
+        document.write("<br>");
+        document.write(typeof msg);
+        document.write("<br>");
+        msg='let\'s learn JS';//ok
+        document.write(msg);
+        document.write("<br>");
+        document.write(typeof msg);
+        document.write("<br>");
+        msg='let\"s learn JS';//ok
+        document.write(msg);
+        document.write("<br>");
+        document.write(typeof msg);
+        document.write("<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

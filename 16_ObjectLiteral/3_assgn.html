@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <script>
+        let student={
+            name:"Ashwini",
+            marks:[50,60,55],
+            //create a method called calculateGrade() which call and returns grade
+            calculateGrade:function(){
+                   let total=0;
+                   for(let m of student.marks){
+                    total=total+m;
+                   }
+               let per=total/3;
+               if(per>=75)
+               {
+                return"distinction";
+               }else if(per>=60)
+               {
+                return"first Division";
+               }else(per<60)
+               {
+                return"fail";
+               }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

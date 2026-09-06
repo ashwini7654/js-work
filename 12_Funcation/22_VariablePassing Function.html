@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let id;
+        let x=function showTime()
+        {
+          let today=new Date();
+          console.log(today);
+        }
+        function startWatch()
+        {
+            id=setInterval(x,1000)
+        }
+        function stopWatch(){
+            clearInterval(id);
+        }
+
+    </script>
+</head>
+<body>
+    <input type="button" value="start time" onclick="startWatch()"/>
+    <input type="button" value="stop time" onclick="stopWatch()"/>
+</body>
+</html>

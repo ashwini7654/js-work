@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representing Random Date</title>
+    <script>
+      function showDate(){
+        let indep1=new Date("1947-08-15");
+        document.write(`${indep1}`);
+        let indep2=new Date("08/15/1947");
+        document.write(`<br>${indep1}`);
+        let indep3=new Date("<br>Aug 15,1947");
+        document.write(`<br>${indep2}`);
+        
+        
+
+        }
+    </script>
+
+    
+</head>
+<body>
+    <button type="button" onclick="showDate()">Show Independent Date</button>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>Sharma Computer Academy</title>
+		<script>
+			function operate() {
+				// select all Courses and display them
+				let firstUl=document.querySelector("ul");
+				console.log(firstUl);
+				let CourseNames=firstUl.querySelectorAll("li");
+				CourseNames.forEach((coursesli)=>{
+					console.log(coursesli);
+					
+				})
+				
+				// select all h3 and display them
+				let allH3=document.querySelectorAll("h3");
+				allH3.forEach((h3)=>{
+					console.log(h3);
+					
+				})
+			}
+			function operate2(){
+				let allTrainers=document.querySelectorAll("ul")[1];
+				let trainersNames=allTrainers.querySelectorAll("li");
+				trainerNames.forEach((trainers)=>{
+					console.log(trainers);
+					
+				})
+			}
+		</script>
+	</head>
+
+	<body>
+		<img src="../media/images/scalogo1.png" />
+		<h2>Welcome To SCA</h2>
+		<h3>Our Mission</h3>
+		<p>
+			The mission of the SHARMA COMPUTER ACADEMY is to provide its students with
+			the foundation for lifelong learning
+		</p>
+		<div class="highlight">
+			<h3>Our Courses</h3>
+			<ul>
+				<li>C</li>
+				<li>C++</li>
+				<li>Python</li>
+				<li>Django</li>
+				<li>MERN</li>
+				<li>Java</li>
+				<li>Oracle</li>
+			</ul>
+		</div>
+		<h3>Our Trainers</h3>
+		<p class="highlight">
+			Our trainers have more than 15 years of experience in IT Industry in
+			various domains
+		</p>
+		<ul>
+			<li>Mr. Sachin Kapoor</li>
+			<li>Mr. Paramjeet Singh</li>
+			<li>Mr. Mohnish Raikwar</li>
+			<li>Mr. Afroz Alam</li>
+		</ul>
+		<h3>Important links</h3>
+		<a href="http://www.scabhopal.in">Our website</a><br />
+		<a href="https://www.facebook.com/scalive.in">SCA Page</a><br />
+
+		<input type="button" value="Show Courses" onclick="operate()" />
+		<input type="button" value="Show trainers" onclick="operate2()" />
+
+	</body>
+</html>

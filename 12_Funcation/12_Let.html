@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ let b=1;
+function f1()
+
+{
+    
+    alert(`Inside F1 a is ${b}`);
+    
+    b++;
+}
+function f2()
+{
+    var b=10;// local ,will shadow the global
+    alert(`Inside F2 a is ${b}`);
+    alert(`Inside f2 global a is ${window.b}`);
+}
+</script>
+</head>
+<body>
+    <input type="button" value="click F1" onclick="f1()">
+    <input type="button" value="click F2" onclick="f2()">
+
+</body>
+</html>

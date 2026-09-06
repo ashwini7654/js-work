@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Voter_Card</title>
+    <style>
+        button {
+            background-color: hsl(122, 39%, 49%); 
+            color: white;
+            padding: 10px 20px;
+            border: 2px,black;
+            border-radius: 5px;
+          
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: green; 
+        }
+        .exit-button {
+            background-color: #f44336; /* Red */
+        }
+
+        .exit-button:hover {
+            background-color: #d32f2f; /* Darker red */
+        }
+    </style>
+    <script>
+        let BOY;
+        BOY=Number(prompt("Please enter your Birth Of Year"));
+        const currentYear = new Date().getFullYear();
+        console.log(`Current year is ${currentYear}`);
+        document.write(`Current year is ${currentYear}<br>`);
+
+      let age=currentYear-BOY;
+
+  
+     if(age>0)
+     {
+      document.write(`Your age is ${age} years <br>`);
+      if(age>18)
+      {
+        document.write(`You can Vote now `);
+        document.write(`<button onclick="window.location.href='votingpage.html'">Vote Now</button>`);
+      }
+      else
+      {
+        document.write(`You cannot Vote now`);
+        document.write(`<button class="exit-button" onclick="history.back()">Exit</button>`);
+      }
+    }
+    
+    else
+     {
+        document.write(`You inputted wrong year`);
+     }
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

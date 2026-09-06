@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //design a function called calculate which accepts any number argument and displays sum and avg
+        function calculate()
+        {
+            let sum=0;
+            for(let x of arguments)
+        {
+            sum=sum+x;
+        }
+        document.write(`Sum is ${sum}<br>`);
+        document.write(`Avg is ${(sum/arguments.length).toFixed(2)}<br>`);
+    
+        }
+        calculate(3,5,7);
+        calculate(12,23,45,67,87);
+       calculate(12,2,4,6,8);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

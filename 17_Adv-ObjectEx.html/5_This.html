@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding this</title>
+    <script>
+        var x=10;
+      function show()
+      {
+        var x=20;
+        document.write(`${x}<br>`);
+        document.write(`${window.x}<br>`);
+        document.write(`${this.x}<br>`);
+
+      }
+show();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+var a=10;//Global
+
+function f1()
+{
+    alert(`Inside F1 a is ${a}`);
+    a++;
+}
+function f2()
+{
+    alert(`Inside F2 a is ${a}`);
+}
+</script>
+</head>
+<body>
+    <input type="button" value="click F1" onclick="f1()">
+    <input type="button" value="click F2" onclick="f2()">
+
+</body>
+</html>
