@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dialog Box Demo</title>
+    <script>
+      let name;
+      name=prompt("What is your name ?","guest");
+      //prompt("What is your name ?"); can be used to take input from user nothing else will  given to box that will be null if user click on cancel button
+      if (name === null) {
+        document.write("No name entered.");
+        
+      } else {
+        document.write(`Good evening ${name}`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
