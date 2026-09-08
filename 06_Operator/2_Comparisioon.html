@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Relational Operator Demo</title>
+    <script>
+      let a = 10;
+      let b = 10.0;
+      let c = "10";
+      let d = "10.0";
+      let x = true;
+      let y = 1;
+      document.write(`a=10 and b=10.0 so a==b is ${a == b}<br>`);
+      document.write(`a=10 and c="10" so a==c is ${a == c}<br>`);
+      document.write(`a=10 and b=10.0 so a===b is ${a === b}<br>`);
+      document.write(`a=10 and c="10" so a===c is ${a === c}<br>`);
+      document.write(`a=10 and d="10.0" so a==d is ${a == d}<br>`);
+      document.write(`a=10 and d="10.0" so a===d is ${a === d}<br>`);
+      document.write(`x=true and y=1 so x==y is ${x == y}<br>`);
+      document.write(`x=true and y=1 so x===y is ${x === y}<br>`);
+      document.write(`c="10" and d="10.0" so c===d is ${c === d}<br>`);
+      document.write(`c="10" and d="10.0" so c==d is ${c == d}<br>`);
+      //because == mein agar dono operands already strings hain, JavaScript unhe number mein convert karke compare nahi karta. It compares the strings directly.
+    </script>
+  </head>
+  <body></body>
+</html>
