@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Type Conversion</title>
+    <title>Type Coercion</title>
     <script>
 let pi=3.14;
-let spie=window.string(pi);
-let x=pi.tostring();
-document.write(`pi );
+let spie=window.String(pi);
+let x=pi.toString();
+document.write(`pi = ${typeof(pi)}<br>`);
+document.write(`spie = ${typeof(spie)}<br>`);
+document.write(`x = ${typeof(x)}<br>`);
 
     </script>
     </head>
-</head>
+
 <body>
     
 </body>
