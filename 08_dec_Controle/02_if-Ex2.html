@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Decsion Control</title>
+    <script>
+        let n;
+        n=Number(prompt("enter a number"));
+        document.write(`${ n }`);
+        if(n===null || isNaN(n)===true){
+            document.write("You didnot inputted  a number");
+        }
+        else if(n<0){
+          document.write(` is a negative number`);
+        } else if(n>=100){
+            document.write(` is 3 digit number`);
+        }
+        else if(n>=10){
+            document.write(` is 2 digit number`);
+        } else if(n>0){
+            document.write(` is single digit positive  number`);
+        }else{
+            document.write(` is neither positive nor negative number`);
+        }
+{
+    
+}     
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
