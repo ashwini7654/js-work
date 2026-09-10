@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Decision Control</title>
+    <script>
+        let num;
+        num=prompt("enter a Number");
+        switch(true){
+            case isNaN(num):
+                document.write(`${num} is not a number`);
+                break;
+            case num%2===0:
+                document.write(`${num} is an even number`);
+                break;
+            default:
+                document.write(`${num} is an odd number`);
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

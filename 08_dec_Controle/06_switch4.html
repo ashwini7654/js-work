@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Decision Control</title>
+    <script>
+        let num;
+        num=Number(prompt("enter a month number"));
+        switch(num){
+            case 12: case 11 :case 1:case 2:
+                document.write(`${num} is Winter`);
+                break;
+            case 3:case 4:case 5: case 6:
+                document.write(`${num} is Summer`);
+                break;    
+            case 7:case 8:case 9: case 10:
+                document.write(`${num} is Rainy`);
+                break;
+             default:
+                document.write(`${num} is not a valid month number`);       
+            
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
