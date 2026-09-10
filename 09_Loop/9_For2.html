@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        let sum=0,count=0;
+        for(; ;){
+             let n=Number(prompt("enter a number:"));
+            if(n==0){
+                break;
+            }
+            sum+=n;
+            count++;
+        }
+        if(count>0){
+            document.write(`Sum of the nos is ${sum}<br>`);
+            document.write(`Avg of the nos is ${(sum/count).toFixed(2)}<br>`);
+        }else{
+            document.write("No numbers were entered.");
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
