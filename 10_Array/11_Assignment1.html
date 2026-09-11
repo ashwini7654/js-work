@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Restaurant  Bill  </title>
+    <script>
+        let NumsOfQuantity=Number(prompt("Enter quantity of items:"));
+        let bills=[];
+        for(let i=0;i<NumsOfQuantity;i++)
+        {
+            bills[i]=Number(prompt(`Enter price of item ${i+1}:`));
+        }
+        let totalAmount=[];
+        let taxAmount=[];
+        for(let i=0;i<bills.length;i++)
+        {
+            if(bills[i]<250){
+                taxAmount[i]=20
+                totalAmount[i]=bills[i]+bills[i]*0.2;
+            }
+            else if(bills[i]<=500){
+                taxAmount[i]=15
+                totalAmount[i]=bills[i]+bills[i]*0.15;
+            }
+            else{
+                taxAmount[i]=10;
+                totalAmount[i]=bills[i]+bills[i]*0.1;
+            }
+        }
+         document.write(`<h3>Bill of ${NumsOfQuantity} items</h3>`);
+         document.write(`<Table border="2">`);
+            document.write(`<tr><th>Item</th><th>Price</th><th>Tax %</th><th>Total Amount</th></tr>`);
+         let total=0;
+         for(let i=0;i<bills.length;i++)
+            {
+                document.write(`<tr><td>${i+1}</td><td>${bills[i]}</td><td>${taxAmount[i]}</td><td>${totalAmount[i]}</td></tr>`);
+                total+=totalAmount[i];
+            }
+            document.write(`<tr><th colspan="3">Total</th><th>${total}</th></tr>`);
+            document.write(`</Table>`);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

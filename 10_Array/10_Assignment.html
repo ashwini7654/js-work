@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Assignment</title>
+    <script>
+        let quantity=Number(prompt("Enter quantity of items:"));
+        let bills=[];
+        let amount=0;
+        let tax=0;
+        for(let i=0;i<quantity;i++)
+        {
+            bills[i]=Number(prompt(`Enter price of item ${i+1}:`));
+            amount+=bills[i];
+        }
+        document.write(`<h3>Bill of ${quantity} items</h3>`);
+        document.write(`<p>Total amount: ${amount}</p>`);
+        let ans=confirm("Do you want to add tax?");
+        if(ans){
+            if(amount<250){
+                document.write(`<h3>Tax is 20%</h3>`);
+                tax=amount*0.2;
+                document.write(`<p>Tax amount: ${tax}</p>`);
+                document.write(`<p>Total amount with tax: ${amount+tax}</p>`);
+            }
+            else if(amount>=250 && amount<=500){
+                document.write(`<h3>Tax is 15%</h3>`);
+                tax=amount*0.15;
+                document.write(`<p>Tax amount: ${tax}</p>`);
+                document.write(`<p>Total amount with tax: ${amount+tax}</p>`);
+            }
+            else{
+                document.write(`<h3>Tax is 10%</h3>`);
+                tax=amount*0.1;
+                document.write(`<p>Tax amount: ${tax}</p>`);
+                document.write(`<p>Total amount with tax: ${amount+tax}</p>`);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
