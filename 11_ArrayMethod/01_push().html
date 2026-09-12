@@ -10,12 +10,13 @@
         document.write(`values:${fruits}<br>`);
 
         let size=fruits.push("oranges");
-        document.write(`size:${fruits.length}<br>`);
+        document.write(`size:${size}<br>`);//fruits.length==size
         document.write(`values:${fruits}<br>`);
 
-        size=fruits.push("kiwi","pomengranate","pappaya");
-        document.write(`size:${fruits.length}<br>`);
+        size=fruits.push("kiwi","pomengranate","pappaya",12);
+        document.write(`size:${size}<br>`);
         document.write(`values:${fruits}<br>`);
+        document.write(`size returned by push(): ${size}<br>`);
     </script>
 </head>
 <body>

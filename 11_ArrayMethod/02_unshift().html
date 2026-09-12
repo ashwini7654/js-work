@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Using Push() method</title>
+    <title>Using Unshift() method</title>
     <script>
         let fruits=["guave","apple","grapes","banana"];
         document.write(`size:${fruits.length}<br>`);
         document.write(`values:${fruits}<br>`);
 
-        let size=fruits.push("oranges");
+        let size=fruits.unshift("oranges");
         document.write(`size:${fruits.length}<br>`);
         document.write(`values:${fruits}<br>`);
 
-        size=fruits.push("kiwi","pomengranate","pappaya");
+        size=fruits.unshift("kiwi","pomengranate","pappaya");
         document.write(`size:${fruits.length}<br>`);
         document.write(`values:${fruits}<br>`);
     </script>
