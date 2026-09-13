@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Assignment 1</title>
+    <script>
+        let names=[];
+        let number=prompt("Enter the number of names you want to add in array:");
+        for(let i=0; i<number; i++){
+            let name=prompt(`Enter name ${i+1}:`);
+            names.push(name);
+        }
+        document.write(`Values:${names}<br>`);
+        let searchName=prompt("Enter the name you want to search:");
+        let index=names.indexOf(searchName);
+        let found=false;
+        while(index!=-1){
+            found=true;
+            document.write(`Name ${searchName} is found at index ${index}.<br>`);
+           index=names.indexOf(searchName, index+1);
+        }
+        if(found==false){
+            document.write(`Name ${searchName} is not found in the array.<br>`);
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
