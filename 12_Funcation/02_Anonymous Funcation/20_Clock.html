@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        
+        let id;
         function showTime()
         {
           let today=new Date();
@@ -15,10 +15,15 @@
         {
             id=setInterval(showTime,1000)
         }
+        function stopWatch(){
+            clearInterval(id);
+            console.log("stop time");
+        }
 
     </script>
 </head>
 <body>
     <input type="button" value="start time" onclick="startWatch()"/>
+    <input type="button" value="stop time" onclick="stopWatch()"/>
 </body>
 </html>

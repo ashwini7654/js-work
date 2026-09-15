@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SetTimeout</title>
     <script>
-        let id;
-        function showTime()
-        {
-          let today=new Date();
-          console.log(today);
-        }
+        
+       let id;
         function startWatch()
         {
-            id=setInterval(showTime,1000)
+            id=setTimeout(function() {
+                let today=new Date();
+                console.log(today);
+            },3000);
         }
         function stopWatch(){
-            clearInterval(id);
+            clearTimeout(id);
+            console.log("stop time");
         }
 
     </script>
