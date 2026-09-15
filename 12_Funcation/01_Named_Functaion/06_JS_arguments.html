@@ -8,6 +8,10 @@
         //design a function called calculate which accepts any number argument and displays sum and avg
         function calculate()
         {
+            if(arguments.length<2){
+                document.write(`Please provide atleast 2 numbers<br>`);
+                return;
+            }
             let sum=0;
             for(let x of arguments)
         {
@@ -20,6 +24,7 @@
         calculate(3,5,7);
         calculate(12,23,45,67,87);
        calculate(12,2,4,6,8);
+       calculate(2);
     </script>
 </head>
 <body>

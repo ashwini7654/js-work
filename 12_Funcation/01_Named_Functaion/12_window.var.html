@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Window Variables</title>
     <script>
-       var a=10;//window mai jagah lene ke liye var ke saath global hona chahiye 
+       var a=10;
+       //window mai jagah lene ke liye var ke saath global hona chahiye 
        //only var se create hone wli obj hi window ka object mai copy ho jayega but var ke allawa kissi or mai nhi hoga 
 
 function f1()
-
-{
-    
-    alert(`Inside F1 a is ${a}`);
-    
+{ 
+    let a=20;
+    alert(`Inside F1 a is ${a}`); 
+    alert(`Inside f1 global a is ${window.a}`);
     a++;
 }
 function f2()
 {
-    var a=10;// local ,will shadow the global
+    var a=15;// local ,will shadow the global
     alert(`Inside F2 a is ${a}`);
     alert(`Inside f2 global a is ${window.a}`);
 }

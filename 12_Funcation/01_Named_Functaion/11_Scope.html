@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
- let b=1;
-function f1()
+       var a=10; 
 
+function f1()
 {
-    
-    alert(`Inside F1 a is ${b}`);
-    
-    b++;
+    alert(`Inside F1 a is ${a}`);
+    a++;
 }
 function f2()
 {
-    var b=10;// local ,will shadow the global
-    alert(`Inside F2 a is ${b}`);
-    alert(`Inside f2 global a is ${window.b}`);
+    var a=20;// local ,will shadow the global
+    alert(`Inside F2 a is ${a}`);
 }
 </script>
 </head>

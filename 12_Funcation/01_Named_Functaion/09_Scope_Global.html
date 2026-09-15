@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Global Scope</title>
     <script>
-       var a=10; 
+
+var a=10;//Global
 
 function f1()
-
 {
-    
     alert(`Inside F1 a is ${a}`);
     a++;
 }
 function f2()
 {
-    var a=10;// local ,will shadow the global
     alert(`Inside F2 a is ${a}`);
 }
 </script>
