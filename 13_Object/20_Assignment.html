@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Assignment</title>
+    <script>
+        let student={
+            name:"Ashwini",
+            age:25,
+            phyiscs:80,
+            chemistry:90,
+            maths:95,
+        }
+        let sum=0;
+        for(let key in student)
+        {
+            if(key=="phyiscs" || key=="chemistry" || key=="maths")
+            {
+                sum+=student[key];
+            }
+        }
+        document.write(`Total marks of ${student.name} is ${sum} and average marks is ${(sum/3).toFixed(2)}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
