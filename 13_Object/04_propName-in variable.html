@@ -8,14 +8,17 @@
     let myCar=new Object();
     myCar.name="Baleno"
     myCar.year=2018;
-    
-   // myCar.reg no="Mp041234";
-   myCar["reg no"]="Mp041234";
+    myCar.color="Red";
+
+    let str="company ";
+    myCar[str]="Tata";
+ // myCar.company="Tata"; //this will give error because of space in property name
 console.log(myCar.name);
 console.log(myCar.year);
 console.log(myCar.color);
-console.log(myCar["color"]);
-console.log(myCar["reg no"]);
+console.log(myCar["company "]);
+console.log(myCar[str]);
+console.log(myCar.company); //this will give undefined because of space in property name
 
 
 </script>

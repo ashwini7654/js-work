@@ -3,21 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Checking property</title>
+    <title>Looping over Object the for...of loop</title>
 <script>
     let myCar=new Object();
     myCar.name="Baleno"
     myCar.year=2018;
-    myCar.audio="Sony";
-    console.log(myCar.audio);
+    myCar.color="Red";
+  myCar.audioSystem="Sony"
+for(let key of Object.values(myCar))
+{
+    document.write(`${key} <br>`);
     
-   console.log("audio" in myCar);
-  console.log(myCar);
-
-delete myCar.audio;
-console.log("audio" in myCar);
-console.log(myCar);
-
+}
 
 </script>
 </head>

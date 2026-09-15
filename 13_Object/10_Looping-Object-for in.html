@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adding multiword using []</title>
+    <title>Looping over Object through the for...in loop</title>
 <script>
     let myCar=new Object();
     myCar.name="Baleno"
@@ -12,7 +12,9 @@
   myCar.audioSystem="Sony"
 for(let key in myCar)
 {
-    console.log(key,myCar[key]);
+    document.write(`${key} : ${myCar[key]}<br>`);
+    // document.write(`${key} : ${myCar.key}<br>`);
+   // will give undefined because key is a variable and not a property of myCar object
     
 }
 

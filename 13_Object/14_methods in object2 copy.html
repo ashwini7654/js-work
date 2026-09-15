@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods in Object</title>
+<script>
+    let myCar=new Object();
+    myCar.name="Baleno"
+    myCar.year=2018;
+    myCar.color="Red";
+    myCar.audioSystem="Sony"
+   
+    myCar["start"]=function(){
+        document.write("Car is starting...........");
+    }
+    myCar.stop=function(){
+        document.write("Car is stopping...........");
+    }
+    
+    myCar.showDetails=function(){
+        document.write(`Car name is ${this.name} and year is ${myCar.year}<br>`);
+    }
+    myCar.showDetails();
+    myCar.start();
+    document.write("<br>");
+    myCar["stop"]();
+</script>
+</head>
+<body>
+    
+</body>
+</html>

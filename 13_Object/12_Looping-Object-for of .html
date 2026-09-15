@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adding multiword using []</title>
+    <title>Looping over Object the for...of loop</title>
 <script>
     let myCar=new Object();
     myCar.name="Baleno"
     myCar.year=2018;
     myCar.color="Red";
-   // myCar.reg no="Mp041234";
-   myCar["reg no"]="Mp041234";
-console.log(myCar.name);
-console.log(myCar.year);
-console.log(myCar.color);
-console.log(myCar["reg no"]);
-
+  myCar.audioSystem="Sony"
+  let arr=Object.entries(myCar);
+for(let key of arr)
+{
+    document.write(`${key[0]} : ${key[1]} <br>`);
+    
+}
 
 </script>
 </head>

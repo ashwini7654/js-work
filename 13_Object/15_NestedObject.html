@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Nested Object</title>
+    <script>
+        let myCar=new Object();
+        myCar.name="Baleno"
+        myCar.year=2018;
+        myCar.color="Red";
+        myCar.audioSystem="Sony"
+       
+        myCar.engine=new Object();
+        myCar.engine.type="Petrol";
+        myCar.engine.capacity="1.2L";
+       
+        document.write(`Car name is ${myCar.name} <br> Car year is ${myCar.year} <br> Car color is ${myCar.color}<br> and engine type is ${myCar.engine.type} <br> and engine capacity is ${myCar.engine.capacity}`);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

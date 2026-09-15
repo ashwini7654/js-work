@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Property Values</title>
+<script>
+    let myCar=new Object();
+    myCar.name="Baleno"
+    myCar.year=2018;
+    myCar.color="Red";
+
+console.log(myCar.name);
+console.log(myCar.year);
+console.log(myCar.color);
+myCar.color="orange"
+myCar["year"]=2020;
+console.log("After changing color");
+console.log(myCar.color);
+console.log("After changing year");
+console.log(myCar.year);
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>
