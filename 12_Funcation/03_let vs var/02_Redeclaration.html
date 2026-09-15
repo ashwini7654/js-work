@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Difference in Let & Var with Redeclaration</title>
+    <script>
+        var a=10;
+        var a=20;
+        console.log("value of a after redeclaration with var is " + a);
+        let b=30;
+        //let b=40;  
+        // //this will give error because we can't redeclare the variable with let
+        console.log("value of b after redeclaration with let is " +b);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Difference in Let & Var with Before Declaring</title>
+    <script>
+        console.log(a); //undefined
+        var a=10;
+        console.log(a); //10
+        console.log(b); //ReferenceError: Cannot access 'b' before initialization
+        let b=20;
+        console.log(b); //20
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

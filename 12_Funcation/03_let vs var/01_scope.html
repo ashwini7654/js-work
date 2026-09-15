@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diference in Let & Var with scope</title>
+    <script>
+        for(var i=1;i<=3;i++)
+        {
+            console.log(i);
+        }
+        console.log("value of i after loop with var is "+i);
+    </script>
+    <script>
+        for(let j=0;j<5;j++)
+        {
+            console.log(j);
+        }
+        console.log("value of j after loop with let is "+j); 
+        //this will give error because j is not defined outside the loop 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
