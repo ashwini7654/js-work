@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let a=10;
-        let b=20;
-        document.write(a===b);
-        document.write("<br>")
-        let name1="Ashwini";
-        let name2="Ashwini";
-        document.write("<br>")
-
-        document.write(name1===name2);
         let person1={
         name:"Ashwini",
         age:20
@@ -26,6 +17,11 @@
         document.write(person1===person2);
         document.write("<br>");
         document.write(person1.name===person2.name);
+        document.write("<br>");
+        document.write(JSON.stringify(person1));
+        document.write("===");
+       
+        document.write(JSON.stringify(person2));
         document.write("<br>");
         document.write(JSON.stringify(person1)===JSON.stringify(person2));
     </script>

@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Understanding this</title>
+    <title>Understanding this as a function</title>
     <script>
+        let a=20;
         var x=10;
-      function show()
-      {
-        var x=20;
+        // as we know that varible declare with var is global variable and it is attached to window object
+        function show(){
+ document.write(`${a}<br>`);
         document.write(`${x}<br>`);
         document.write(`${window.x}<br>`);
         document.write(`${this.x}<br>`);
+        document.write(`${this===window}<br>`);
+        }
+       show();
 
-      }
-show();
+
 
     </script>
 </head>
