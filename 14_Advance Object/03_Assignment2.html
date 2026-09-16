@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Assignment 2</title>
+
+    <script>
+        let account = {
+            accountId: null,
+            accountHolderName: null,
+            accountBalance: null,
+
+            setAccountDetails: function(id, name, balance) {
+                this.accountId = id;
+                this.accountHolderName = name;
+                this.accountBalance = balance;
+            },
+
+            getAccountDetails: function() {
+                return `Account Id: ${this.accountId}<br>
+                        Account Holder Name: ${this.accountHolderName}<br>
+                        Account Balance: ${this.accountBalance}`;
+            },
+
+            deposit: function(amount) {
+                this.accountBalance += amount;
+            },
+
+            withdraw: function(amount) {
+                if (amount <= this.accountBalance) {
+                    this.accountBalance -= amount;
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        };
+
+
+        // Step 1: Account details input
+        let id = Number(prompt("Enter the account id:"));
+        let name = prompt("Enter the account holder name:");
+        let balance = Number(prompt("Enter the account balance:"));
+
+        account.setAccountDetails(id, name, balance);
+
+
+        // Step 2: First display account details
+        document.write("<b>Account Details:</b><br>");
+        document.write(account.getAccountDetails());
+
+        document.write("<br><br>");
+
+
+        // Step 3: Now ask for deposit or withdraw
+        let ans = prompt(
+            "Do you want to deposit or withdraw?\nEnter 'deposit' or 'withdraw'"
+        );
+
+
+        // Step 4: Deposit
+        if (ans.toLowerCase() === "deposit") {
+
+            let amount = Number(prompt("Enter the amount to deposit:"));
+
+            account.deposit(amount);
+
+            document.write(`<b>Amount ${amount} deposited successfully.</b><br><br>`);
+            document.write("<b>Updated Account Details:</b><br>");
+            document.write(account.getAccountDetails());
+        }
+
+
+        // Step 5: Withdraw
+        else if (ans.toLowerCase() === "withdraw") {
+
+            let amount = Number(prompt("Enter the amount to withdraw:"));
+
+            if (account.withdraw(amount)) {
+
+                document.write(`<b>Amount ${amount} withdrawn successfully.</b><br><br>`);
+                document.write("<b>Updated Account Details:</b><br>");
+                document.write(account.getAccountDetails());
+
+            } else {
+
+                document.write("<b>Insufficient balance</b>");
+            }
+        }
+
+
+        // Step 6: Invalid input
+        else {
+            document.write("<br>Invalid input");
+        }
+
+    </script>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Assignment 1</title>
+    <script>
+        let rectangle={
+            length:null,
+            breadth:null,
+            setRectangle:function(x,y)
+            {
+                this.length=x;
+                this.breadth=y;
+            },
+            area:function()
+            {
+                return this.length*this.breadth;
+            },
+            perimeter:function()
+            {
+                let p=2*(this.length + this.breadth);
+                return p;
+            }
+        }
+        let x=Number(prompt("Enter the length of rectangle:"));
+        let y=Number(prompt("Enter the breadth of rectangle:"));
+        rectangle.setRectangle(x,y);
+        document.write(`Area of rectangle is ${rectangle.area()}<br>`);
+        document.write(`Perimeter of rectangle is ${rectangle.perimeter()}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
