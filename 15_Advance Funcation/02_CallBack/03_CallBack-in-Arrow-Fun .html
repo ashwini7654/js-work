@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back in Anonymous Function</title>
+    <script>
+        function multiply(a,b,c)
+        {
+            let x=a*b;
+            c(x)
+        }
+       
+        multiply(10,2,  (p) =>
+        {
+            console.log(`product is ${p}`);
+            
+        });
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
