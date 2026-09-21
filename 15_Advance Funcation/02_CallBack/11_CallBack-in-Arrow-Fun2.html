@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back in Anonymous Function</title>
+    <script>
+        function multiply(a,b,callback)
+        {
+           let result=a*b;
+            document.write(`product of ${a} and ${b} is ${result}<br>`);
+            callback(result)
+        }
+        multiply(-2,34,(result)=> (result>0)?document.write(`${result} is positive<br>`):document.write(`${result} is negative<br>`));  
+       
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

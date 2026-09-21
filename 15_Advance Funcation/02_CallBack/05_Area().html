@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Area using callback</title>
+    <script>
+        function area(radius,callback)
+        {
+            let area=Math.PI*Math.pow(radius,2);
+            callback(area);
+        }
+        area(7,function(area){
+            document.write(`Area of circle is ${area.toFixed(2)}<br>`);
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

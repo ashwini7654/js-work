@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Back in Named Function</title>
+    <script>
+        function multiply(a,b,callback)
+        {
+            let x=a*b;
+            document.write(`product of ${a} and ${b} is ${x}<br>`);
+            callback(x)
+        }
+        function checkEvenOdd(p)
+        {
+            if(p%2===0)
+            {
+                document.write(`${p} is Even`);
+            }
+            else
+            {
+                document.write(`${p} is Odd`);
+            }
+            
+        }
+        multiply(10,2,checkEvenOdd);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
