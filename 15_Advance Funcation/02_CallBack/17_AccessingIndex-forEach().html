@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Accessing index and value in forEach</title>
     <script>
-         let arr=[10,20,30,40,50];
+         let arr=[12,25,36,44,53,33];
          arr.forEach((x,i)=>
          {
+            if(x%2===0){
             console.log(`index ${i},value${x}`);
-            
-         })
+        }
+         });
     </script>
 </head>
 <body>

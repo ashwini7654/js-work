@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Need of CallBack</title>
+    <script>
+        function getData(callback) {
+
+    document.write("Getting data...");
+    document.write("<br> <br>");
+
+    setTimeout(function() {
+
+        document.write("Data received <br>");
+
+        callback();
+
+    }, 3000);
+}
+
+function displayData() {
+    document.write("Display data");
+}
+
+getData(displayData);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

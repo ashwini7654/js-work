@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Assignment</title>
+    <script>
+        let employee=[{
+            name:"Niraj",
+            salary:90000,
+            hireDate:"1 July,2010"
+        }
+        ,{
+            name:"Deepak",
+            salary:25000,
+            hireDate:"15 August,2009"
+        }
+        ,{
+            name:"Anshul",
+            salary:80000,
+            hireDate:"11 Decmeber,2011"
+        }]
+        document.write(`<h1>Employee Details</h1>`);
+        for(let x of employee)
+        {
+            document.write(`Name : ${x.name}<br>`);
+            document.write(`Salary : ${x.salary}<br>`);
+            document.write(`Hire Date : ${x.hireDate}<br>`);
+            document.write(`<br>`);
+        }
+        document.write(`<h1>Employee Details after sorting by salary</h1>`);
+        employee.sort((a,b)=>a.salary-b.salary);
+        for(let x of employee)
+        {
+            document.write(`Name : ${x.name}<br>`);
+            document.write(`Salary : ${x.salary}<br>`);
+            document.write(`Hire Date : ${x.hireDate}<br>`);
+            document.write(`<br>`);
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
