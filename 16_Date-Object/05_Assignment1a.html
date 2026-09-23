@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Assignment 1a</title>
+    <script>
+        let dob=prompt("Enter your date of birth in yyyy-mm-dd format");
+        let date=new Date(dob);
+        let day=date.getDay();
+        let days="";
+        switch(day)
+        {
+            case 0:
+                days="Sunday";
+                break;
+            case 1:
+                days="Monday";
+                break;
+            case 2:
+                days="Tuesday";
+                break;
+            case 3:
+                days="Wednesday";
+                break;
+            case 4:
+                days="Thursday";
+                break;
+            case 5:
+                days="Friday";
+                break;
+            case 6:
+                days="Saturday";
+                break;
+        }
+        document.write(`<br> You were born on a ${days}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

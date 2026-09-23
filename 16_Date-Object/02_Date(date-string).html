@@ -6,10 +6,11 @@
     <title>Representing Random Date</title>
     <script>
       function showDate(){
-        let indep1=new Date("1947-08-15");
+        let indep1=new Date("1947-08-15");//IS0 format
         document.write(`${indep1}`);
-        let indep2=new Date("08/15/1947");
-        document.write(`<br>${indep1}`);
+        let indep2=new Date("08/15/1947");//short Date 
+
+        document.write(`<br>${indep1}`);//long Date
         let indep3=new Date("<br>Aug 15,1947");
         document.write(`<br>${indep2}`);
         

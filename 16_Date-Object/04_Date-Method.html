@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representing Random Date and time</title>
+    <script>
+      function showCurrentTime()
+      {
+        let now=new Date();
+        document.write(`<br> CURRENT TIME: ${now}`);
+        let str1=now.getDay();
+        document.write(`<br> TODAY: ${str1}`);
+        
+       let time= now.getHours() + ":" +now.getMinutes() + ":" +now.getSeconds();
+       
+        document.write(`<br>${time}`);
+
+        document.write(`<br>Current Time in Milliseconds: ${now.getTime()}`);
+         
+        let str2=now.getFullYear();
+        document.write(`<br>Current Year: ${str2}`);
+
+        let str3=now.getMonth();
+        document.write(`<br>Current Month: ${str3}`);
+         let str4=now.getDate();
+        document.write(`<br>Current Date: ${str4}`);
+
+        }
+    </script>
+
+    
+</head>
+<body>
+    <button type="button" onclick="showCurrentTime()">Show Current Time</button>
+</body>
+</html>

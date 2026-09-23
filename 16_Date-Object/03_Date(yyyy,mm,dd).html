@@ -7,11 +7,22 @@
     <script>
       function showDate()
       {
+        //. Date(yyyy,mm,dd)
+
         let indep1=new Date(1947,7,15);//0 se jan start hai toh 7 pr aug ayega
         document.write(`${indep1}`);
-        let dob=new Date("2002,5,15,15,0,0");
+
+        //. Date(“Month dd,yyyy hh:mm:ss” ): 
+         let dob2=new Date("Aug 15,1947 14:30:45");
+        document.write(`<br>${dob2}`);
+
+       //. Date(yyyy,mm,dd,hh,mm,ss)
+        let dob=new Date(1999,11,25,10,30,45);//0 se jan start hai toh 11 pr dec ayega
         document.write(`<br>${dob}`);//time show krme ka alag tarika
-        
+       
+        //. Date(milliseconds) 
+        let dob1=new Date(1000000000000);
+        document.write(`<br>${dob1}`);
         
 
         }
@@ -20,6 +31,6 @@
     
 </head>
 <body>
-    <button type="button" onclick="showDate()">Show Independent Date</button>
+    <button type="button" onclick="showDate()">Show  Date</button>
 </body>
 </html>
