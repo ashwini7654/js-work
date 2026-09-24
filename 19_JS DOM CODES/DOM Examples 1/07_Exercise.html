@@ -3,13 +3,23 @@
 		<title>Sharma Computer Academy</title>
 		<script>
 			function operate() {
-				// Write code to print all the elements with class attribute highlight"
+				// select all paragraphs
+				let allPara=document.querySelectorAll("p");
+				allPara.forEach((para)=>{
+					console.log(para);
+				})
+				// select all elements with class highlight
+				let allHighlight=document.querySelectorAll(".highlight");
+				allHighlight.forEach((highlight)=>{
+					console.log(highlight);
+				})
 			}
 		</script>
 	</head>
 
 	<body>
-		<img src="../media/images/scalogo1.png" />
+		<img src="../images/scalogo.png" />
+		
 		<h2>Welcome To SCA</h2>
 		<h3>Our Mission</h3>
 		<p>

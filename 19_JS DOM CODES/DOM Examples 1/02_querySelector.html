@@ -7,20 +7,26 @@
 				let firstpara=document.querySelector("p");
 				console.log(firstpara);
 				
-				// select an elenent with class highlight
+				// select an element with class highlight
 				let firstEle=document.querySelector(".highlight");
 				console.log(firstEle);
 				
 				//select the para with class highlight
 				let firstEleWithPara=document.querySelector("p.highlight");
 				console.log(firstEleWithPara);
+				//select h3  with id
+				let firstEleWithId=document.querySelector("h3#trainers");
+				console.log(firstEleWithId);
+				// change  image
+				let firstImage=document.querySelector("img");
+				firstImage.src="../images/friends.png";
 
 			}
 		</script>
 	</head>
 
 	<body>
-		<img src="../media/images/scalogo1.png" />
+		<img src="../images/scalogo1.png" />
 		<h2>Welcome To SCA</h2>
 		<h3>Our Mission</h3>
 		<p>
@@ -28,7 +34,7 @@
 			the foundation for lifelong learning
 		</p>
 		<div class="highlight">
-			<h3>Our Courses</h3>
+			<h3 >Our Courses</h3>
 			<ul>
 				<li>C</li>
 				<li>C++</li>
@@ -39,7 +45,7 @@
 				<li>Oracle</li>
 			</ul>
 		</div>
-		<h3>Our Trainers</h3>
+		<h3 id="trainers">Our Trainers</h3>
 		<p class="highlight">
 			Our trainers have more than 15 years of experience in IT Industry in
 			various domains
