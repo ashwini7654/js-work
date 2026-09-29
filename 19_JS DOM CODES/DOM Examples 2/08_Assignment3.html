@@ -4,14 +4,21 @@
 		<script>
 			function showLink() {
 				//code to add the link dynamically
+				let  link =prompt("Enter the Website Name:");
+				let url= "www."+link+".com";
+				let aTag=document.querySelector("a");
+				aTag.setAttribute("href", url);
+				aTag.setAttribute("target", "_blank");
+				
 			}
 		</script>
 	</head>
+
 
 	<body>
 		<h3>Generate Website Link</h3>
 		<input type="button" value="Create Website Link" onclick="showLink()" />
 		<br />
-		<a></a>
+		<a href="#" target="_blank">Link</a>
 	</body>
 </html>

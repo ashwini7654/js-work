@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Assignment</title>
+		<script>
+			function changeLogo() {
+				//Change image alternatively
+				let image=document.querySelector("img");
+				if (image.getAttribute("src") === "../images/eiffel.jpg") {
+					image.setAttribute("src","../images/bucky.jpg");
+					document.title = "Bucky";n 
+					document.querySelector("h3").innerText = "Bucky";
+				} else {
+					image.setAttribute("src","../images/eiffel.jpg");
+					document.title = "Eiffel Tower";
+					document.querySelector("h3").innerText = "Eiffel Tower";
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<h3>My Pic</h3>
+		<img src="../images/eiffel.jpg" /><br />
+		<input type="button" value="Change Logo" onclick="changeLogo()" />
+	</body>
+</html>
