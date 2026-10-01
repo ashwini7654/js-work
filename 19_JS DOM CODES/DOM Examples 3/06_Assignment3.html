@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Assignment 3 - Programming Languages</title>
+		<script>
+			function addList() {
+				//Write code to generate programming languages list
+				let div =document.querySelector("div");
+				let newList=document.createElement("ul");
+				let newListItem1=document.createElement("li");
+				let newListItemText1=document.createTextNode("JavaScript");
+
+				let newListItem2=document.createElement("li");
+				let newListItemText2=document.createTextNode("Python");
+
+				let newListItem3=document.createElement("li");
+				let newListItemText3=document.createTextNode("Java");
+				newListItem1.appendChild(newListItemText1);
+				newListItem2.appendChild(newListItemText2);
+				newListItem3.appendChild(newListItemText3);
+
+				// newList.appendChild(newListItem1,newListItem2,newListItem3);
+				// APPEND EK HI ARGUMENT LETA H ,ULTIPLE NHI LETTA H
+				newList.appendChild(newListItem1);
+				newList.appendChild(newListItem2);
+				newList.appendChild(newListItem3);
+				div.appendChild(newList);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="d1"></div>
+		<input type="button" value="show languages" onclick="addList()" />
+	</body>
+</html>

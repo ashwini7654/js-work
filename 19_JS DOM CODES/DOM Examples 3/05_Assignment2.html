@@ -1,13 +1,12 @@
 <html>
 	<head>
-		<title>Adding New Para</title>
-
+		<title>Assignment 2</title>
 		<script>
 			function addPara() {
-				///create a new para and add it in the div
+				//add new para > where para no should be replaced with para number 3 ,4 ,5 and so on whenever the button is clicked.
 				let div=document.querySelector("div");
 				let newPara=document.createElement("p");
-				let newTextNode=document.createTextNode("i m Para " + (div.children.length+1));
+				let newTextNode=document.createTextNode("I am para  " + (div.children.length+1));
 				newPara.appendChild(newTextNode);
 				div.appendChild(newPara)
 			}
