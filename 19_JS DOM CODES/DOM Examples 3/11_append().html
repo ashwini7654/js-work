@@ -1,10 +1,13 @@
 <html>
 	<head>
-		<title>Using append() with string</title>
+		<title>Using append()</title>
 		<script>
 			function addPara() {
 				let div = document.querySelector("div");
-				div.append("Welcome");
+				let newPara = document.createElement("p");
+				let newText = document.createTextNode("I am para " + (div.children.length + 1));
+				newPara.append(newText);
+				div.append(newPara);
 			}
 		</script>
 	</head>

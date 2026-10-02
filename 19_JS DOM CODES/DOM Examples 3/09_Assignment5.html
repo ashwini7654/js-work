@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Assignment</title>
+		<script>
+			function addItem() {
+				//Write code a new color name after the specified color name
+				let newColor = prompt("Enter your new color name");
+				newColor = newColor.toUpperCase();
+				let existingColor = prompt("Enter the existing color name after which you want to add the new color");
+				existingColor = existingColor.toUpperCase();
+				let ul = document.getElementById("colors");
+				console.log(ul.children.length);
+				let existingLi = null;
+				console.log(ul.children.length);
+
+				for (let i = 0; i < ul.children.length; i++) {
+					if (ul.children[i].innerText === existingColor) {
+						existingLi = ul.children[i];
+						break;
+					}
+				}
+
+				if (existingLi) {
+					let newLi = document.createElement("li");
+					newLi.textContent = newColor;
+					ul.insertBefore(newLi, existingLi.nextSibling);
+				}
+
+			}
+		</script>
+	</head>
+
+	<body>
+		<h3>My Favourite Colors</h3>
+		<ul id="colors">
+			<li>RED</li>
+			<li>BLUE</li>
+		</ul>
+		<input type="button" value="add new item" onclick="addItem()" />
+	</body>
+</html>
