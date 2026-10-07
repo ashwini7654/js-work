@@ -7,7 +7,13 @@ listItems.forEach((item) => {
 });
 
 const btn = document.querySelector("#additem");
+     btn.addEventListener("click", () => {
+		alert("You clicked the button");
+	});
 const ul = document.querySelector("ul");
+       ul.addEventListener("click", () => {
+		alert("You clicked the li but this is ul event listener");
+	});
 
 btn.addEventListener("click", () => {
 	let task = prompt("What you want to do next ?");
