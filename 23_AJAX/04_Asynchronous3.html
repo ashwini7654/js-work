@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Asynchronous AJAX</title>
+    <script>
+       console.log("one");
+        setTimeout(() => {
+            console.log("two");
+        }, 3000);
+        setTimeout(() => {
+            console.log("three");
+        }, 0);
+        console.log("four");
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
