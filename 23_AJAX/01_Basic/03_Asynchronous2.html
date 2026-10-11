@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Asynchronous AJAX</title>
+    <script>
+        const secondfunc=()=>{
+            console.log("in second function");
+        }
+        const firstfunc=()=>{
+            console.log("in first function");
+            secondfunc();
+            console.log("end of first function");
+        };
+        firstfunc();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
