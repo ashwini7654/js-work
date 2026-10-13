@@ -17,5 +17,7 @@ async function doTask() {
 		resSpan.innerHTML = result;
 	} catch (error) {
 		resSpan.innerHTML = error;
+	}finally {
+		resSpan.innerHTML += "<br>Task completed!";
 	}
 }

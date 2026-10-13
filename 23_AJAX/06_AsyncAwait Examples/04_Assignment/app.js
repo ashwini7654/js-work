@@ -24,5 +24,7 @@ async function doTask() {
   } catch (err) {
     span1.innerHTML += err;
     span2.innerHTML = "😢😢";
+  }finally {
+    span2.innerHTML += "<br>Thank you for your patience!";
   }
 }
