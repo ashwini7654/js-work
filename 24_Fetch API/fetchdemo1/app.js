@@ -1,4 +1,5 @@
 function getData() {
+  
   const txtUserName = document.querySelector("#githubId").value.trim();
   const detailsDiv = document.querySelector("#details");
   if (!txtUserName) {
